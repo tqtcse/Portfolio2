@@ -3,8 +3,8 @@ import { MdEmail } from 'react-icons/md';
 
 const FooterInfo = () => {
     return (
-        <div className="w-full flex justify-center mt-4 ">
-            <div className="w-full flex justify-center mt-4">
+        <div className="w-full flex justify-center mt-4 mb-4">
+            <div className="w-full flex justify-center mt-4 mb-4">
                 <div className="flex gap-x-12 text-[28px] text-gray-700">
                     {/* LinkedIn */}
                     <a

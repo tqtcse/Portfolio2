@@ -1,11 +1,13 @@
 import React from "react";
+import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 
 interface VideoModalProps {
     videoSrc: string;
+    github: string;
     onClose: () => void;
 }
 
-const VideoModal: React.FC<VideoModalProps> = ({ videoSrc, onClose }) => {
+const VideoModal: React.FC<VideoModalProps> = ({ videoSrc, onClose, github }) => {
     return (
         <div className="fixed inset-0 bg-[rgba(0,0,0,0.3)] backdrop-blur-sm flex items-center justify-center z-50">
 
@@ -23,6 +25,17 @@ const VideoModal: React.FC<VideoModalProps> = ({ videoSrc, onClose }) => {
                     <button className="tab-btn text-lg font-semibold text-blue-600 border-b-2 border-blue-600">
                         Video
                     </button>
+                    <div className="flex gap-x-12 text-[28px] text-gray-700">
+                        <a
+                            href={github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-black transition-colors"
+                        >
+                            <FaGithub />
+                        </a>
+                    </div>
+
                 </div>
 
                 {/* Video Content */}

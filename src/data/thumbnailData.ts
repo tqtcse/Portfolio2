@@ -21,7 +21,8 @@ const thumbnailData = [
             'Implemented Python multithreading for faster video processing, and integrated PostgreSQL for efficient data management.'
         ],
         description: 'Tune2Tab is a personal project created by me and a colleague. The idea behind the project is to help users convert piano-playing videos into sheet music. This way, users can get the sheet music from any video and use it for their own purposes, like practicing or learning to play the song.',
-        description2: 'This project uses the OpenCV library to analyze video frames and detect the elements we need in order to convert them into sheet music (tabs). We also apply several techniques such as sorting algorithms, math, and object-oriented programming (OOP) to reduce complexity and improve performance for faster processing. The project is still in development and will be completed soon.'
+        description2: 'This project uses the OpenCV library to analyze video frames and detect the elements we need in order to convert them into sheet music (tabs). We also apply several techniques such as sorting algorithms, math, and object-oriented programming (OOP) to reduce complexity and improve performance for faster processing. The project is still in development and will be completed soon.',
+        github: 'https://github.com/tqtcse'
     },
     {
         name: 'QuickRead',
@@ -37,6 +38,7 @@ const thumbnailData = [
 
         ],
         description: 'QuickRead is a mobile app that makes reading easier and more enjoyable. It offers offline reading, a built-in dictionary, and lets users create a personal book library. With a simple design and smooth performance, QuickRead helps users enjoy their favorite books anytime, anywhere.',
+        github: 'https://github.com/tqtcse/QuickRead'
     },
     {
         name: 'LogiMind',
@@ -45,6 +47,7 @@ const thumbnailData = [
         h2: 'ReactJS | ViteJS | NodeJS | ExpressJS | OpenAI | PayOS | PM2',
         team_size: '2',
         role: 'Fullstack',
+        github: 'https://github.com/tqtcse/LogiMind-Demo-Version',
         key: [
             `JWT Authentication: Implemented JWT for API protection and access, ensuring the security of transmitted data`,
             `Hashing User Data (Frontend): Applied hashing to user information on the frontend to prevent sensitive data exposure during transmission`,
@@ -66,6 +69,7 @@ const thumbnailData = [
         team_size: '2',
         role: 'Backend',
         key: ['File sharing between devices on the same LAN network.'],
+        github: 'https://github.com/tqtcse/Simple-BitTorent-In-Computer-Network',
         description: 'A simple BitTorrent app is an application that implements the core principles of the BitTorrent protocol, allowing users to download and upload files via a decentralized peer-to-peer (P2P) network. The main idea behind BitTorrent is to break large files into smaller pieces and distribute those pieces among multiple peers, which helps speed up file sharing.',
     },
     {
@@ -81,6 +85,7 @@ const thumbnailData = [
             "Built using pure HTML, CSS, and vanilla JavaScript",
             "Utilizes a NoSQL database for flexible data storage",
         ],
+        github: 'https://github.com/tqtcse/BK_Hospital',
         description: 'BK Hospital is a web platform designed to help companies efficiently manage hospital operations, tools, and medical equipment.',
     },
     {
@@ -96,6 +101,7 @@ const thumbnailData = [
             'Third-Party APIs Integration: PayOS',
             'Clean Code: Wrote clean, maintainable, and scalable code'
         ],
+        github: 'https://github.com/tqtcse',
         description: 'Eshop is a project focused on building an online store for a small business looking to expand into e-commerce. It was developed as a major assignment for the Software Project Management course. Through this project, I gained a deeper understanding of how a team operates, as well as how to manage and monitor project progress effectively.',
     },
     {
@@ -108,6 +114,7 @@ const thumbnailData = [
         key: [
             'Achieved a score of 8.5/10 in the Software Engineering course'
         ],
+        github: 'https://github.com/PhucPhamMinh/CNPM-thay-Phat',
         description: 'HCMUT SSPS-SPSO is a project that helps staff and students at the University of Danang - University of Science and Technology easily use and manage printing services.',
     },
 ];

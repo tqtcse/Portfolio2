@@ -6,14 +6,14 @@ const BodyInfo = () => {
         <div className="flex space-x-4 h-full">
 
             {/* Khung Education */}
-            <div className="w-1/2 flex flex-col space-y-4 ml-4 flex-1">
+            <div className="w-1/2 flex flex-col space-y-4 ml-4 ">
                 <div className=" p-4 rounded-lg shadow-md ml-4 flex flex-col h-4/10" style={{ border: '0.1px solid #d1d5db' }}>
                     {/* Dòng tiêu đề ở trên, chiếm chiều cao riêng */}
                     <h3 className="font-semibold text-xl mb-2 text-left ">Education</h3>
 
-                    {/* Nội dung còn lại chiếm phần còn lại của chiều cao */}
+
                     <div className="flex-1 flex items-center justify-center ">
-                        {/* Logo */}
+
                         <div className="relative w-28 h-28 rounded-lg overflow-hidden shadow-xl mr-4" style={{ border: '0.1px solid #d1d5db' }}>
                             <img
                                 src={BkLogo}
@@ -22,7 +22,7 @@ const BodyInfo = () => {
                             />
                         </div>
 
-                        {/* Thông tin */}
+
                         <div className="flex flex-col justify-center">
                             <div className="flex items-center flex-wrap">
                                 <h3 className="text-xl font-semibold">VNU-HCM University Of Technology - HCMUT</h3>
@@ -95,7 +95,7 @@ const BodyInfo = () => {
 
 
             {/* Khung Skills */}
-            <div className="w-1/2 flex flex-col flex-1 mr-4">
+            <div className="w-1/2 flex  flex-1 mr-4">
                 <div
                     className="p-6 rounded-xl shadow-lg bg-white flex flex-col flex-1"
                     style={{ border: '1px solid #d1d5db' }}

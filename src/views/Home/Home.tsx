@@ -12,7 +12,7 @@ const Home = () => {
     const [selectedName, setSelectedName] = useState<string>('');  // Trạng thái cho tên item hover
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
     const [selectedVideo, setSelectedVideo] = useState<string>('');
-
+    const [selectedGithub, setSelectedGithub] = useState<string>('');
 
     const selectedItem = thumbnailData.find((item: ThumbnailItem) => item.name === selectedName);
 
@@ -23,9 +23,10 @@ const Home = () => {
 
     };
 
-    const handleOpenModal = (video: string) => {
+    const handleOpenModal = (video: string, github: string) => {
         console.log(video)
         setSelectedVideo(video);
+        setSelectedGithub(github)
         setIsModalOpen(true);
     };
 
@@ -33,12 +34,13 @@ const Home = () => {
         setIsModalOpen(false);
         setSelectedVideo('');
     };
+    // console.log(selectedItem.github)
 
     return (
         <div className="home-gradient-bg grid grid-cols-4 h-screen overflow-hidden " style={{ height: 'calc(100vh - 65px)' }}>
             {/* Sidebar */}
             <div className="col-span-1 p-4 overflow-y-auto bg-gray-100" style={{ height: 'calc(100vh - 65px)' }}>
-                <HomeSideBar onSelectItem={handleItemSelect} onClick={() => handleOpenModal(selectedItem.video)} />
+                <HomeSideBar onSelectItem={handleItemSelect} onClick={() => handleOpenModal(selectedItem.video, selectedItem.github)} />
             </div>
 
             {/* Main Content */}
@@ -65,7 +67,7 @@ const Home = () => {
 
             </div>
             {isModalOpen && (
-                <VideoModal videoSrc={selectedVideo} onClose={handleCloseModal} />
+                <VideoModal videoSrc={selectedVideo} onClose={handleCloseModal} github={selectedGithub} />
             )}
             {/* <div className="col-span-1" /> */}
         </div>
