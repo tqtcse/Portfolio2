@@ -1,0 +1,24 @@
+/* Home.css */
+.home-gradient-bg {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #f5f7fa 100%);
+    animation: gradientAnimation 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.highlight {
+    color: #00c4b4;
+}
