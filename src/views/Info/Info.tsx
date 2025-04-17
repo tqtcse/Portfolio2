@@ -1,5 +1,6 @@
 import HeaderInfo from './HeaderInfo'
 import BodyInfo from './BodyInfo';
+import FooterInfo from './FooterInfo';
 
 const Info = () => {
     return (
@@ -9,7 +10,7 @@ const Info = () => {
             <div className='mt-5'>
                 <BodyInfo />
             </div>
-
+            <FooterInfo />
         </div>
     );
 };

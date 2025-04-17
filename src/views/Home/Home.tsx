@@ -42,20 +42,25 @@ const Home = () => {
             </div>
 
             {/* Main Content */}
-            <div className="col-span-3 flex justify-center items-center p-10 overflow-y-auto">
-                <div className="home-content"></div>
-                {!selectedItem && <HomeMainContent />}
+            <div className="col-span-3 flex flex-1 items-center justify-center">
+                <div className="home-content">
+                    {!selectedItem && <HomeMainContent />}
+                </div>
+
                 {selectedItem && (
-                    <Thumbnail
-                        name={selectedItem.name}
-                        img={selectedItem.img}
-                        description={selectedItem.description}
-                        description2={selectedItem.description2}
-                        h2={selectedItem.h2}
-                        team_size={selectedItem.team_size}
-                        role={selectedItem.role}
-                        keyC={selectedItem.key}
-                    />
+                    <div className="">
+                        <Thumbnail
+                            name={selectedItem.name}
+                            img={selectedItem.img}
+                            description={selectedItem.description}
+                            description2={selectedItem.description2}
+                            h2={selectedItem.h2}
+                            team_size={selectedItem.team_size}
+                            role={selectedItem.role}
+                            keyC={selectedItem.key}
+                        />
+                    </div>
+
                 )}
 
             </div>

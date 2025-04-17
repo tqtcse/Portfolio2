@@ -3,9 +3,9 @@ import { ThumbnailProps } from '../../../../@types/thumbnail';
 
 const Thumbnail = ({ name, img, description, h2, team_size, role, description2, keyC }: ThumbnailProps) => {
     return (
-        <div className='flex '>
+        <div className='flex flex-1 items-center'>
 
-            <div>
+            <div className='details'>
 
                 <div className="w-full flex justify-center">
                     <div className="max-w-2xl">
@@ -52,7 +52,7 @@ const Thumbnail = ({ name, img, description, h2, team_size, role, description2, 
                     </div>
                 </div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-4 w-[40vw]">
+            <div className="bg-white rounded-xl shadow-md p-4 w-[40vw] h-[60vh] mr-2">
                 <div className="">
                     <img
                         src={img}

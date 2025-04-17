@@ -3,13 +3,13 @@ import { FaFacebook } from 'react-icons/fa';
 
 const BodyInfo = () => {
     return (
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 h-full">
 
             {/* Khung Education */}
-            <div className="w-1/2 flex flex-col space-y-4 ml-4">
-                <div className=" p-4 h-[25vh] rounded-lg shadow-md ml-4 flex flex-col" style={{ border: '0.1px solid #d1d5db' }}>
+            <div className="w-1/2 flex flex-col space-y-4 ml-4 flex-1">
+                <div className=" p-4 rounded-lg shadow-md ml-4 flex flex-col h-4/10" style={{ border: '0.1px solid #d1d5db' }}>
                     {/* Dòng tiêu đề ở trên, chiếm chiều cao riêng */}
-                    <h3 className="font-semibold text-xl mb-2 text-left">Education</h3>
+                    <h3 className="font-semibold text-xl mb-2 text-left ">Education</h3>
 
                     {/* Nội dung còn lại chiếm phần còn lại của chiều cao */}
                     <div className="flex-1 flex items-center justify-center ">
@@ -39,9 +39,9 @@ const BodyInfo = () => {
 
                 </div>
 
-                <div className=" p-4 h-[30vh] rounded-lg shadow-md ml-4 flex flex-col" style={{ border: '0.1px solid #d1d5db' }}>
+                <div className=" p-4 rounded-lg shadow-md ml-4 flex flex-col h-6/10" style={{ border: '0.1px solid #d1d5db' }}>
                     <h3 className="font-semibold text-xl mb-2 text-left">Experience</h3>
-                    <div className="text-gray-700 leading-relaxed text-sm">
+                    <div className="text-gray-700 leading-relaxed text-sm md:text-base lg:text-lg">
                         <p><strong>Dec 2024 – Feb 2025</strong></p>
                         <p><strong>Remote Fullstack Developer</strong></p>
                         <p>
@@ -75,6 +75,18 @@ const BodyInfo = () => {
                                 Nguyen Minh Son
                             </a>
                         </div>
+                        <div className="flex items-center space-x-2 text-blue-600">
+                            <p className="font-medium text-black">Client Project:</p>
+
+                            <a
+                                href=" https://logimindcs.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline text-sm"
+                            >
+                                https://logimindcs.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,16 +95,16 @@ const BodyInfo = () => {
 
 
             {/* Khung Skills */}
-            <div className="w-1/2">
+            <div className="w-1/2 flex flex-col flex-1 mr-4">
                 <div
-                    className="p-6 rounded-xl shadow-lg mr-4 bg-white h-[57vh] flex flex-col"
+                    className="p-6 rounded-xl shadow-lg bg-white flex flex-col flex-1"
                     style={{ border: '1px solid #d1d5db' }}
                 >
                     {/* TIÊU ĐỀ LUÔN Ở GÓC TRÊN TRÁI */}
                     <h3 className="font-semibold text-xl mb-4 text-left">Skills</h3>
 
                     {/* PHẦN NỘI DUNG CĂN GIỮA THEO CHIỀU DỌC */}
-                    <div className="ml-4 flex-1 flex flex-col justify-center space-y-3 text-gray-700">
+                    <div className="ml-4 flex-1 flex flex-col justify-center space-y-3 text-gray-700 md:text-base lg:text-lg">
                         <div>
                             <span className="font-medium text-gray-800">Programming Languages: </span>
                             TypeScript, JavaScript, Python, Java, C++.
@@ -125,7 +137,7 @@ const BodyInfo = () => {
 
                         <div>
                             <span className="font-medium text-gray-800">Soft Skills: </span>
-                            Problem Solving, Analytical Thinking, Teamwork, Quick adaptability to new technologies and concepts.
+                            Strong problem-solving and analytical thinking abilities, effective team collaboration, and a quick adaptability to new technologies and complex concepts.
                         </div>
                     </div>
                 </div>
