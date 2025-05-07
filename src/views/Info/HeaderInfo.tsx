@@ -7,7 +7,7 @@ const HeaderInfo = () => {
             <div className="flex items-center justify-start ml-[10vw]">
                 <div className="relative w-32 h-32 rounded-full overflow-hidden  shadow-xl mr-4" style={{ border: '0.1px solid #d1d5db' }}>
                     <img
-                        src={Avatar} // Đường dẫn đến avatar của bạn
+                        src='https://d2206g6teziymy.cloudfront.net/faceToan.jpg' // Đường dẫn đến avatar của bạn
                         alt="Avatar"
                         className="w-full h-full object-cover"
                     />
