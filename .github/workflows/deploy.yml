@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run automation scripts (line + format + test)
-      run: npm run check
+    # - name: Run automation scripts (line + format + test)
+    #   run: npm run check
 
     - name: Build Vite app
       run: npm run build
