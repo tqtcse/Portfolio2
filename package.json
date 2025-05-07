@@ -11,7 +11,8 @@
     "prettier:fix": "npm run prettier -- --write",
     "lint": "npx eslint",
     "lint:fix": "npm run lint -- --fix",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "check": "npm run lint && npm run format && npm run test"
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.2",

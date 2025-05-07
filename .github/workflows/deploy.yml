@@ -12,6 +12,23 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run automation scripts (line + format + test)
+      run: npm run check
+
+    - name: Build Vite app
+      run: npm run build
+
+    - name: Zip build folder
+      run: zip -r dist.zip dist
 
     - name: Copy and deploy zipped build to EC2
       uses: appleboy/scp-action@v0.1.4

@@ -16,7 +16,7 @@ const HomeMainContent = () => {
                             <span className="highlight">tqtcse</span>
                         </h1>
                         <p className="text-2xl text-gray-700 mb-6">
-                            Fullstack Developer | Cloud Engineer | Frontend & Backend Specialist
+                            Fullstack Developer | Cloud Engineer
                         </p>
                         <div className="flex space-x-4 mb-6">
                             <a href="#" className="contact-item text-gray-600 hover:text-gray-800 transition">About</a>
