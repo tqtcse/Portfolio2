@@ -26,7 +26,7 @@ const HomeMainContent = () => {
                         </div>
 
                         <p className="text-gray-500 text-sm italic">
-                            Hello! I’m a third-year Computer Science student with a strong interest in fullstack development and
+                            Hello!! I’m a third-year Computer Science student with a strong interest in fullstack development and
                             cloud engineering. Over the past few years, I’ve been actively building projects that span both frontend
                             and backend, gaining hands-on experience with modern frameworks like React, Node.js, and various cloud
                             technologies. I enjoy solving real-world problems through code and am constantly looking for
