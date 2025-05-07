@@ -50,3 +50,9 @@ jobs:
           unzip -o dist.zip
           sudo rm -rf /usr/share/nginx/html/*
           sudo cp -r /home/ec2-user/cicd/dist/* /usr/share/nginx/html/
+
+    - name: Notify on Telegram 
+      run: |
+        curl -s -X POST https://api.telegram.org/bot${{ secrets.7543746007:AAECqQySF0dYPsTNV6fqujSHsSDSncCYeJo }}/sendMessage \
+          -d chat_id=${{ secrets.6880385433}} \
+          -d text="✅ React App has been deployed successfully!"
