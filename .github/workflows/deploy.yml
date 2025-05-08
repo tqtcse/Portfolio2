@@ -24,6 +24,9 @@ jobs:
     # - name: Run automation scripts (line + format + test)
     #   run: npm run check
 
+    - name: Automation Test
+      run: npm test
+
     - name: Build Vite app
       run: npm run build
 
